@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: PSB;
     src: url(fonts/ProductSans-Black.ttf);
@@ -50,58 +52,12 @@ Button {
     font-family: PSM;
 }
 
-.btn-pink-moon {
-    background: #ec008c;  
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
-    background: linear-gradient(to right, #fc6767, #ec008c); 
-    color: #ec008c;
-}
-
 body {
     background-color: #eee;
     font-family: PSM;
 }
 
-.cardcuidador {
-    background-color: #ffffff;
-    width: 350px;
-    border-radius: 20px
+.btn-outline-primary-space {
+  margin-right: 10px;
 }
 
-.heading {
-    font-weight: 700
-}
-
-.hour {
-    margin-top: 1px;
-    color: #ffbd66;
-    font-size: 12px
-}
-
-.btn {
-    border-radius: 15px !important;
-    transition-duration: 0.4s;
-    border-color: #5F16C9;
-    border-width: 1px;
-    
-}
-
-.btn {
-    border-radius: 10px !important
-    
-}
-
-  .btn:hover {
-    background-color: #5F16C9; /* Green */
-    color: white;
-    border-color: #5F16C9;
-    
-  }
-
-.line-color {
-    color: #5F16C9;
-    height: 10px;
-}
-.hour{
-    color: #5F16C9;
-}
