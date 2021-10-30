@@ -156,6 +156,11 @@
                       <div class="invalid-feedback">
                       </div>
                     </div>
+
+                    <div class="col-12">
+                      <label for="numero"  class="form-label">Número de contato *<span class="text-muted"></span></label>
+                      <input name="txt_complemento" type="text" class="form-control" id="numero" placeholder="(21) 99999-9999"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                    </div>
         
                     <div class="col-12">
                       <label for="address"  class="form-label">Endereço *</label>
@@ -165,20 +170,15 @@
                     </div>
 
                     <div class="col-12">
-                      <label for="address2"  class="form-label">Complemento *<span class="text-muted"></span></label>
-                      <input name="txt_complemento" type="text" class="form-control" id="address2" placeholder="Apartamento/Condomínio">
-                    </div>
-
-                    <div class="col-12">
                         <label for="address"  class="form-label">CPF *</label>
-                        <input name="txt_cpf" type="text" class="form-control" id="address" placeholder="000.000.000-00" required="">
+                        <input name="txt_cpf" type="text" class="form-control" id="address" placeholder="000.000.000-00" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required="">
                         <div class="invalid-feedback">
                         </div>
                       </div>
 
                       <div class="col-12">
                         <label for="address" class="form-label">RG  *</label>
-                        <input name="txt_rg" type="text" class="form-control" id="address" placeholder="000000000000" required="">
+                        <input name="txt_rg" type="text" class="form-control" id="address" placeholder="000000000000" required="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                         <div class="invalid-feedback">
                         </div>
                       </div>
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-md-3">
                       <label for="00000000"  class="form-label">CEP  *</label>
-                      <input type="text" name="txt_cep" class="form-control" id="zip" placeholder="" required="">
+                      <input type="text" name="txt_cep" class="form-control" id="zip" placeholder="" required="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                       <div class="invalid-feedback">
                       </div>
                     </div>

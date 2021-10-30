@@ -15,6 +15,7 @@ if(mysqli_num_rows($sql_logar)!=0){
 
 else {
 
+    header('location:login.html');
 
     echo " <script>
 

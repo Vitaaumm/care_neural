@@ -44,18 +44,23 @@
     }
   </style>
 
+<form method="POST" action="login.php" class="form-signin">
+<label for="inputText" class="sr-only">Usuário</label>
+<input name="txt_user" type="text" id="inputText" class="form-control" placeholder="Usuário" required="" autofocus="">
+<label for="inputPassword" class="sr-only">Senha</label>
+<input name="txt_senha" type="password" id="inputPassword" class="form-control" placeholder="senha" required="">
+</form>
+
+
 
 </head>
  </head>
+ 
 
   <body class="text-center">
-    <form method="POST" action="login.php" class="form-signin">
       <img class="mb-4" src="midia/aka.png" alt="" width="250" height="250">
       <h1 class="h3 mb-3 font-weight-normal">Entrar no sistema</h1>
-      <label for="inputText" class="sr-only">Usuário</label>
-      <input name="txt_user" type="text" id="inputText" class="form-control" placeholder="Usuário" required="" autofocus="">
-      <label for="inputPassword" class="sr-only">Senha</label>
-      <input name="txt_senha" type="password" id="inputPassword" class="form-control" placeholder="senha" required="">
+   
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Lembrar minhas Informações
@@ -67,5 +72,47 @@
     </form>
   
 
+    <section class="main-content">
+      <div class="container">
+        <div class="d-none d-sm-none d-md-block">
+          <h1 class="text-center text-uppercase">Simple Login Form</h1>
+          <br>
+          <br>
+        </div>
+  
+        <div class="login-card d-flex rounded-lg overflow-hidden bg-white">
+          <div class="login-message d-none d-sm-none d-md-flex flex-column justify-content-center p-5">
+            <img src="img/welcome.svg" alt="Welcome" class="img-fluid mb-3">
+            <h2>Welcome back</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, asperiores!</p>
+          </div>
+          <div class="login-body">
+            <div class="login-body-wrapper mx-auto">
+              <h3 class="text-center text-uppercase mb-3 text-primary">Login</h3>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control form-control-lg" name="" id="email" aria-describedby="helpId" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control form-control-lg" name="" id="password" aria-describedby="helpId" placeholder="">
+                <a href="#!">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-block btn-lg">Login</button>
+              <p class="text-muted text-center">New to our platform? <a href="#!">Signup</a></p>
+              <div class="or-divider rounded-circle bg-white shadow d-flex justify-content-center align-items-center mx-auto mb-3">Or</div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <button class="btn btn-facebook btn-block btn-lg my-1">Facebook</button>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-google btn-block btn-lg my-1">Google</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
