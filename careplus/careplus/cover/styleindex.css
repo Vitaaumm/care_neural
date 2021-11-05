@@ -1,0 +1,63 @@
+
+
+@font-face {
+    font-family: PSB;
+    src: url(fonts/ProductSans-Black.ttf);
+  }
+
+@font-face {
+    font-family: PSBI;
+    src: url(fonts/ProductSans-BoldItalic.ttf);
+  }
+
+@font-face {
+    font-family: PSM;
+    src: url(fonts/ProductSans-Medium.ttf);
+  }
+
+@font-face {
+    font-family: PSMI;
+    src: url(fonts/ProductSans-MediumItalic.ttf);
+  }
+
+  
+@font-face {
+    font-family: PSBO;
+    src: url(fonts/ProductSans-Bold.ttf);
+  }
+
+  h1 {
+    font-family: PSBO;
+}
+
+h2 {
+    font-family: PSBO;
+}
+h6 {
+    font-family: PSBO;
+}
+p {
+    font-family: PSM;
+  }
+
+span  {
+    font-family: PSM;
+  }
+
+a:link{
+    font-family: PSM;
+ }
+
+Button {
+    font-family: PSM;
+}
+
+body {
+    background-color: #eee;
+    font-family: PSM;
+}
+
+.btn-outline-primary-space {
+  margin-right: 10px;
+}
+
