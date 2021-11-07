@@ -13,9 +13,12 @@ $complemento = $_POST['txt_complemento'];
 $cpf = $_POST['txt_cpf'];
 $rg = $_POST['txt_rg'];
 $cep = $_POST['txt_cep'];
+$numero = $_POST['txt_numero'];
+$bairro = $_POST['txt_bairro'];
+$cidade = $_POST['txt_cidade'];
 
 
-$sql_cadastro=mysqli_query( $conexao , " INSERT INTO `tb_usuarios` (`primeiro nome`, `segundo nome`, `nome de usuario`, `senha`, `email`, `endereço`, `complemento`, `cpf`, `rg`, `cep`) VALUES ('$primeironome', '$segundonome', '$usuario', '$senha', '$email', '$endereco', '$complemento', '$cpf', '$rg', '$cep') " );
+$sql_cadastro=mysqli_query( $conexao , " INSERT INTO `tb_usuarios` (`nome`, `sobrenome`, `usuario`, `senha`, `email`, `endereço`, `lote`, `cpf`, `rg`, `cep`, `numero`, `bairro`, `cidade`) VALUES ('$primeironome', '$segundonome', '$usuario', '$senha', '$email', '$endereco', '$complemento', '$cpf', '$rg', '$cep', '$numero', '$bairro', '$cidade') " );
 
 if($sql_cadastro==true){
 

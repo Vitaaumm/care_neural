@@ -43,34 +43,34 @@
               <img src="midia/01a.png" class="rounded float-start">             
               <h1 style="color: #241731;">Informações básicas</h1>
 
-              <form class="row g-3">
+              <form class="row g-3" method="POST" action="cadastro_parceiros.php">
                 <div class="col-md-4 needs-validation">
                   <label for="validationDefault01" class="form-label" style="color: #241731;">Nome</label>
-                  <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault01" value="" required>
+                  <input name="txt_pnome" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault01" value="" required>
                 </div>
                 <div class="col-md-4 needs-validation">
                   <label for="validationDefault02" class="form-label" style="color: #241731;">Sobrenome</label>
-                  <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
+                  <input name="txt_snome" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
                 </div>
                 <div class="col-md-4 needs-validation">
                   <label for="validationDefaultUsername" class="form-label" style="color:#241731;">Username (visível na plataforma)</label>
                   <div class="input-group">
                     <span class="input-group-text rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="inputGroupPrepend2">@</span>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                    <input name="txt_user" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                   </div>
                 </div>
                 <div>
                   <div class="row g-2 needs-validation">
                     <div class="col-md needs-validation">
                       <div class="form-floating needs-validation">
-                        <input type="email" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="floatingInputGrid" placeholder="seunome@email.com" value="">
+                        <input name="txt_email" type="email" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="floatingInputGrid" placeholder="seunome@email.com" value="">
                         <label for="floatingInputGrid" style="color: #241731;">Email</label>
                       </div>
                       
                     </div>
                     <div class="col-md needs-validation">
                       <div class="form-floating needs-validation">
-                        <input type="password" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9; "id="floatingPassword" placeholder="Password">
+                        <input name="txt_senha" type="password" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9; "id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword" style="color: #241731;">Senha</label>
                       </div>
                       <br>
@@ -79,15 +79,15 @@
 
                   <div class="col-md-4 needs-validation">
                     <label for="validationDefault01" class="form-label" style="color: #241731;">CPF/CNPJ</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault01" value="" required>
+                    <input name="txt_cpf" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault01" value="" required>
                   </div>
                   <div class="col-md-4 needs-validation">
                     <label for="validationDefault02" class="form-label" style="color: #241731;">RG</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
+                    <input name="txt_rg" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
                   </div>
                   <div class="col-md-4 needs-validation">
                     <label for="validationDefault03" class="form-label" style="color: #241731;">Número de contato</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
+                    <input name="txt_numero" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationDefault02" value="" required>
                   </div>
                   <div>
                       <div class="col-md needs-validation">
@@ -111,21 +111,21 @@
                 <form class="row g-3 needs-validation" novalidate>
                   <div class="col-md-4">
                     <label for="validationCustom01" class="form-label" style="color: #241731;" >Endereço</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom01" value="" required placeholder="Av. Nilo Peçanha">
+                    <input name="txt_endereco" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom01" value="" required placeholder="Av. Nilo Peçanha">
                     <div class="valid-feedback">
                       Tudo certo!
                     </div>
                   </div>
                   <div class="col-md-4 needs-validation">
                     <label for="validationCustom02" class="form-label" style="color: #241731;">Número/Lote</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom02" value="" required placeholder="455">
+                    <input name="txt_complemento" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom02" value="" required placeholder="455">
                     <div class="valid-feedback">
                       Tudo certo!
                     </div>
                   </div>
                     <div class="col-md-4 needs-validation">
                       <label for="validationCustom02" class="form-label" style="color: #241731;">Bairro</label>
-                      <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom02" value="" required placeholder="Parque União">
+                      <input name="txt_bairro" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom02" value="" required placeholder="Parque União">
                       <div class="valid-feedback">
                         Tudo certo!
                       </div>
@@ -133,7 +133,7 @@
          
                   <div class="col-md-6 needs-validation">
                     <label for="validationCustom03" class="form-label" style="color: #241731;">Cidade</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom03" required placeholder="Duque de Caxias">
+                    <input name="txt_cidade" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom03" required placeholder="Duque de Caxias">
                     <div class="invalid-feedback">
                       Please provide a valid city.
                     </div>
@@ -147,7 +147,7 @@
                   </div>
                   <div class="col-md-3 needs-validation">
                     <label for="validationCustom05" class="form-label" style="color: #241731;">CEP</label>
-                    <input type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom05" required required placeholder="48255-165">
+                    <input name="txt_cep" type="text" class="form-control rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" id="validationCustom05" required required placeholder="48255-165">
                   </div>
                   <div class="col-12">
                     <div class="form-check">
@@ -158,7 +158,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Criar perfil</button>
+                    <input type="submit" value="Cadastrar-se">
                   </div>
                   </form>
 
