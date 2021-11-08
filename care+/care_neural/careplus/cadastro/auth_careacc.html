@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!--Bootstrap + css -->
+    <link rel="stylesheet" type="text/css" href="auth.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body style="background-image: url('media/bg_authcare+.png');">
+
+    <!--auth navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="authnavbar">
+        <div class="container">
+            <a class="navbar-brand" href="auth_central.html">
+                <img src="media/Authlogo_nav.png" alt="" width="148" height="72">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="auth_central.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="auth_carepartner.html">conta CareParter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="auth_careacc.html">conta Care+</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ajuda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--auth care+ account card-->
+      <div class="container-fluid">
+        <section class="main-content">
+          <div class="container">
+            <div class="d-none d-sm-none d-md-block">
+            </div>
+            <div class="login-card d-flex rounded-lg overflow-hidden shadow-lg">
+              <div class="login-message d-none d-sm-none d-md-flex flex-column justify-content-center p-5" style="background-image: url('media/login_bg1.png');">
+                <h1 class="text-center">Olá, usuário!</h1>
+              </div>
+              <div class="login-body"  style="background-color: white;">
+                <form action="login.php" method="POST">
+                <div class="login-body-wrapper mx-auto">
+                    <img src="media/cardcare+.png" alt="" width="524" height="72">
+                  <form method="POST" action="login.php" class="form-signin">
+                    
+                    <label for="email" class="text-muted"></label>
+                    <label for="inputText" class="sr-only"></label>
+                    <h5>Email</h5>
+                    <input name="txt_email" type="text" class="form-control form-control-lg rounded-pill" name="" id="email" aria-describedby="helpId" placeholder="" style="border-color: #5F16C9; background-color: rgb(255, 255, 255); color: #5F16C9;">
+                    <label for="email" class="text-muted"></label>
+                    <label for="inputPassword" class="sr-only" id="inputsenha"></label>
+                    <h5>Senha</h5>
+                    <input name="txt_senha" type="password"  class="form-control form-control-lg rounded-pill" id="inputPassword" class="form-control" placeholder="" required="" style="border-color: #5F16C9; background-color: rgb(255, 255, 255); color: #5F16C9;">
+                    <br>
+                    <input type="submit" class="btn rounded-pill" style="border-color: #5F16C9; color: #5F16C9;" value="Entrar">
+                    <a type="button" href="auth_central.html" class="btn btn-outline-primary-space rounded-pill" style="border-color: #FF9E17; color: #C87500;">Voltar</a>
+                    <button type="button" class="btn btn-outline-primary-space rounded-pill" style="border-color: #5F16C9; color: #5F16C9;">Esqueci minha senha  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg></button>
+                </form>
+                <br>
+
+                  <!--<button type="submit" class="btn btn-primary btn-block btn-lg">Entrar</button>-->
+      
+                  <br>
+                  
+                  <p class="text-muted text-center">Não tem uma conta? <a href="cad_careacc.html" style="color: #5F16C9;">Crie uma!</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          </div>
+       </div>
+</body>
+</html>

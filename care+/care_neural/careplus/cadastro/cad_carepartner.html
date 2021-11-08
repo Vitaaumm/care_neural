@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!--Bootstrap + css -->
+    <link rel="stylesheet" type="text/css" href="auth.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body style="background-image: url('media/bg_cadpartner.png');">
+
+    <!--auth navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="authnavbar">
+        <div class="container">
+            <a class="navbar-brand" href="auth_central.html">
+                <img src="media/Authlogo_nav.png" alt="" width="148" height="72">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="auth_central.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="auth_carepartner.html">conta CareParter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="auth_careacc.html">conta Care+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Card Cadastro parceiro-->
+    <div class="container-fluid">
+        <section class="main-content">
+            <div class="container">
+                <div class="d-none d-sm-none d-md-block">
+                </div>
+                <div class="login-card d-flex rounded-lg overflow-hidden shadow-lg">
+                    <div class="login-message d-none d-sm-none d-md-flex flex-column justify-content-top p-5"
+                        style="background-image: url('media/cad_bg2.png');">
+                        <h2 class="text-center">Cadastre-se gratuitamente ao programa CarePartner!</h2>
+                    </div>
+                    <div class="login-body" style="background-color: white;">
+                        
+                        <img src="media/cardcadcarepartner.png" alt="" width="680" height="88">
+                        <br>
+                        <br>
+                        <div class="alert alert-primary d-flex align-items-center" role="alert" style="background-color: #5400d1a8; border-color: #5F16C9; color: white; font-family: PSM;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                            <div>
+                              Em caso de dúvidas sobre o cadastro, acesse o portal de ajuda!
+                            </div>
+                          </div>
+                        <div class="login-body-wrapper mx-auto">
+                        </div>
+                                <br>
+                                <h2 style="color: #5F16C9; font-family: PSBO; text-align: center;">Informações básicas</h2>
+                                <br>
+                                <form class="row g-3" method="POST" action="cadastro_parceiros.php">
+                                    <div class="col-md-4 needs-validation">
+                                        <label for="validationDefault01" class="form-label"
+                                            style="color: #5F16C9;  font-family: PSM;">Nome</label>
+                                        <input name="txt_pnome" type="text" class="form-control rounded-pill"
+                                            style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;" id="validationDefault01"
+                                            value="" required>
+                                    </div>
+                                    <div class="col-md-4 needs-validation">
+                                        <label for="validationDefault02" class="form-label"
+                                            style="color: #5F16C9;  font-family: PSM;">Sobrenome</label>
+                                        <input name="txt_snome" type="text" class="form-control rounded-pill"
+                                            style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;" id="validationDefault02"
+                                            value="" required>
+                                    </div>
+                                    <div class="col-md-4 needs-validation">
+                                        <label for="validationDefaultUsername" class="form-label"
+                                            style="color:#5F16C9;  font-family: PSM;">Username</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                id="inputGroupPrepend2">@</span>
+                                            <input name="txt_user" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row g-2 needs-validation">
+                                            <div class="col-md needs-validation">
+                                                <div class="form-floating needs-validation">
+                                                    <input name="txt_email" type="email"
+                                                        class="form-control rounded-pill"
+                                                        style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                        id="floatingInputGrid" placeholder="seunome@email.com" value="">
+                                                    <label for="floatingInputGrid" style="color: #5F16C9;  font-family: PSM;">Email</label>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md needs-validation">
+                                                <div class="form-floating needs-validation">
+                                                    <input name="txt_senha" type="password"
+                                                        class="form-control rounded-pill"
+                                                        style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;"
+                                                        id="floatingPassword" placeholder="Password">
+                                                    <label for="floatingPassword" style="color: #5F16C9;  font-family: PSM;">Senha</label>
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <br>
+                                            <h2 style="color: #5F16C9; font-family: PSBO; text-align: center;">Documentos e dados pessoais</h2>
+                                            <br>
+                                            <br>
+                                            <div class="col-md-4 needs-validation">
+                                                <label for="validationDefault01" class="form-label"
+                                                    style="color: #5F16C9;  font-family: PSM;">CPF/CNPJ</label>
+                                                <input name="txt_cpf" type="text" class="form-control rounded-pill"
+                                                    style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                    id="validationDefault01" value="" required>
+                                            </div>
+                                            <div class="col-md-4 needs-validation">
+                                                <label for="validationDefault02" class="form-label"
+                                                    style="color: #5F16C9;  font-family: PSM;">RG</label>
+                                                <input name="txt_rg" type="text" class="form-control rounded-pill"
+                                                    style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                    id="validationDefault02" value="" required>
+                                            </div>
+                                            <div class="col-md-4 needs-validation">
+                                                <label for="validationDefault03" class="form-label"
+                                                    style="color: #5F16C9;  font-family: PSM;">Número de contato</label>
+                                                <input name="txt_numero" type="text" class="form-control rounded-pill"
+                                                    style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                    id="validationDefault02" value="" required>
+                                            </div>
+                                            <div>
+                                                <div class="col-md needs-validation">
+                                                    <div class="form-floating">
+                                                        <select class="form-select rounded-pill"
+                                                            style="border-color: #5F16C9; color: #5F16C9;  font-family: PSM;"
+                                                            id="floatingSelectGrid"
+                                                            aria-label="Quanto tempo você trabalha como cuiador?">
+                                                            <option selected>Menos de 1 ano</option>
+                                                            <option value="1">Entre 1 - 3 anos</option>
+                                                            <option value="2">Entre 4 - 6 anos</option>
+                                                            <option value="3">Mais de 6 anos</option>
+                                                        </select>
+                                                        <label for="floatingSelectGrid" style="color: #5F16C9;  font-family: PSM;">Quanto
+                                                            tempo você trabalha como cuidador de idosos?</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <br>
+                                    <h2 style="color: #5F16C9;  font-family: PSBO; text-align: center;">Localização</h2>
+                                    <br>
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-md-4">
+                                            <label for="validationCustom01" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">Endereço</label>
+                                            <input name="txt_endereco" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom01"
+                                                value="" required placeholder="">
+                                            <div class="valid-feedback">
+                                                Tudo certo!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 needs-validation">
+                                            <label for="validationCustom02" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">Número/Lote</label>
+                                            <input name="txt_complemento" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom02"
+                                                value="" required placeholder="">
+                                            <div class="valid-feedback">
+                                                Tudo certo!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 needs-validation">
+                                            <label for="validationCustom02" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">Bairro</label>
+                                            <input name="txt_bairro" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom02"
+                                                value="" required placeholder="">
+                                            <div class="valid-feedback">
+                                                Tudo certo!
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 needs-validation">
+                                            <label for="validationCustom03" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">Cidade</label>
+                                            <input name="txt_cidade" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom03"
+                                                required placeholder="">
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 needs-validation">
+                                            <label for="validationCustom04" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">Estado</label>
+                                            <select class="form-select rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom04"
+                                                required>
+                                                <option selected disabled value="">Escolha...</option>
+                                                <option>Rio de Janeiro</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 needs-validation">
+                                            <label for="validationCustom05" class="form-label"
+                                                style="color: #5F16C9; font-family: PSM;">CEP</label>
+                                            <input name="txt_cep" type="text" class="form-control rounded-pill"
+                                                style="border-color: #5F16C9; color: #5F16C9; font-family: PSM;" id="validationCustom05"
+                                                required required placeholder="">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck" style="font-family: PSM; color: #5F16C9;">
+                                                    Aceito os termos e condições de uso da Homecare+.
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck" style="font-family: PSM; color: #5F16C9;">
+                                                    Aceito os termos de responsabilidade da Homecare+.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="submit" class="btn rounded-pill" value="Cadastrar-se" style="font-family: PSM; border-color: #5F16C9; color: #5F16C9;">
+                                            <a type="button" href="auth_central.html" class="btn btn-outline-primary-space rounded-pill" style="border-color: #FF9E17; color: #C87500;">Voltar</a>
+                                        </div>
+                                        
+                                    </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
