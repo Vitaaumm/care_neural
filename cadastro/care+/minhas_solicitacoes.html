@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CarePlus</title>
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link href="css/stylecards.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="careplus_media/icon.png" type="image/x-icon">
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link href="styleindex.css" rel="stylesheet" />
+
+
+
+    <title>CarePlus</title>
+</head>
+
+<body>
+    <!--========== Navbar ==========-->
+    <header class="header">
+        <div class="header__container">
+            <img src="careplus_media/user_1.png" alt="" class="header__img">
+
+            <a href="#" class="nav__link">
+                <i class=''></i>
+                <span class=""></span>
+                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+            </a>
+            <img src="careplus_media/navlogo.png" href="#" class="header__logo"></img>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== Navbar lateral ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="index.html" class="nav__link nav__logo">
+                </a>
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Início</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Menu principal</span>
+                        </a>
+
+                        <a href="solicitar.html" class="nav__link">
+                            <i class='bx bx-bookmark-alt-plus nav__icon'></i>
+                            <span class="nav__name">Solicitar</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Buscar cuidadores</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="busca_distancia.html" class="nav__dropdown-item">Buscar por distância</a>
+                                    <a href="busca_especialidade.html" class="nav__dropdown-item">Buscar por
+                                        especialidade</a>
+                                    <a href="busca_experiencia.html" class="nav__dropdown-item">Buscar por
+                                        experiência</a>
+                                    <a href="lista_cuidadores.html" class="nav__dropdown-item">Buscar por todos
+                                        cuidadores</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Menu</h3>
+                        <div>
+                            <a href="" class="nav__link active nav__icon">
+                                <i class='bx bx-book-content'></i>
+                                <span class="nav__name"> &nbsp Minhas solicitações</span>
+                            </a>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Meu perfil</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="perfil_user.html" class="nav__dropdown-item">Informações pessoais</a>
+                                      <a href="" class="nav__dropdown-item">pagamento <h6><span class="badge bg-secondary" style="font-family: PSB;">Em breve</span></h6></a>
+                                      <a href="localizacao.html" class="nav__dropdown-item">Localização</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-help-circle nav__icon' ></i>
+                            <span class="nav__name">Ajuda <h6><span class="badge bg-secondary" style="font-family: PSB;">Em breve</span></h6></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Encerrar sessão</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--Conteúdo da página-->
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 class="pb-2 border-bottom">Início &nbsp > &nbsp Solicitações atuais</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Lucas Veríssimo</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@verissimolucas</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Confirmado</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$670</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/2.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #C87500; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">André Balada</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@baladacuidador</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;" id="valor">A
+                                                Confirmar</span>
+                                            <span class="job-label" style="background-color: #6600ff33;" id="tipo">12
+                                                dias</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$1,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">André Balada</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@baladacuidador</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;" id="valor">A
+                                                Confirmar</span>
+                                            <span class="job-label" style="background-color: #6600ff33;" id="tipo">12
+                                                dias</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$1,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">André Balada</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@baladacuidador</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;" id="valor">A
+                                                Confirmar</span>
+                                            <span class="job-label" style="background-color: #6600ff33;" id="tipo">12
+                                                dias</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$1,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">André Balada</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@baladacuidador</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;" id="valor">A
+                                                Confirmar</span>
+                                            <span class="job-label" style="background-color: #6600ff33;" id="tipo">12
+                                                dias</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$1,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Zé Roberto</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@zeroberto_cuidador</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Confirmado</span>
+                                            <span class="job-label" style="background-color: #6600ff33;" id="tipo">4
+                                                dias</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$1,100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/3.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #C87500; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="pb-2 border-bottom">Início &nbsp > &nbsp Solicitações concluídas</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Felipe Luís</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@_felipin</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Concluído</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$250</span>
+                                        </div>
+                                        <div>
+                                            <div class="card bg-white p-3 mb-4 border-0">
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                <small class="ml-1">Centro, Duque de Caxias</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                <small class="ml-1">Diária</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Pedro Geromel</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@geromito_cuida</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Concluído</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$250</span>
+                                        </div>
+                                        <div>
+                                            <div class="card bg-white p-3 mb-4 border-0">
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                <small class="ml-1">Centro, Duque de Caxias</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                <small class="ml-1">Diária</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Thiago Silva</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@thiago_silva</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Concluído</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$250</span>
+                                        </div>
+                                        <div>
+                                            <div class="card bg-white p-3 mb-4 border-0">
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                <small class="ml-1">Centro, Duque de Caxias</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                <small class="ml-1">Diária</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <br>
+                                <div class="job-card" style="border-radius: 30px;">
+                                    <div class="job-card__content">
+                                        <div class="job-card__content-top">
+                                            <div class="job-card_img">
+                                                <img src="careplus_media/user_2.png" alt="Company Logo">
+                                            </div>
+                                            <div class="job-card_info">
+                                                <a href="#!" class="float-right">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <a href="#!" class="job-card_company">
+                                                    <h4 class="mb-0 d-inline-block">Felipe Luís</h4>
+                                                </a>
+                                                <p class="text-muted mb-0">@_felipin</p>
+                                            </div>
+                                        </div>
+                                        <div class="job-card_content-mid">
+                                            <div class="job-card_job-type">
+                                                <span class="job-label" style="background-color: #ff9e1727;"
+                                                    id="valor">Concluído</span>
+                                                <span class="job-label" style="background-color: #6600ff33;"
+                                                    id="tipo">Diária</span>
+                                                <span class="job-label" style="background-color: #6600ff33;"
+                                                    id="valor">R$250</span>
+                                            </div>
+                                            <div>
+                                                <div class="card bg-white p-3 mb-4 border-0">
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                    <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                    <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                    <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                    <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                    <small class="ml-1">Centro, Duque de Caxias</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                    <small class="ml-1">Diária</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                        <p class="mb-1 mt-1 text-muted"></p>
+                                        <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                            style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <br>
+                                <div class="job-card" style="border-radius: 30px;">
+                                    <div class="job-card__content">
+                                        <div class="job-card__content-top">
+                                            <div class="job-card_img">
+                                                <img src="careplus_media/user_2.png" alt="Company Logo">
+                                            </div>
+                                            <div class="job-card_info">
+                                                <a href="#!" class="float-right">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <a href="#!" class="job-card_company">
+                                                    <h4 class="mb-0 d-inline-block">Pedro Geromel</h4>
+                                                </a>
+                                                <p class="text-muted mb-0">@geromito_cuida</p>
+                                            </div>
+                                        </div>
+                                        <div class="job-card_content-mid">
+                                            <div class="job-card_job-type">
+                                                <span class="job-label" style="background-color: #ff9e1727;"
+                                                    id="valor">Concluído</span>
+                                                <span class="job-label" style="background-color: #6600ff33;"
+                                                    id="tipo">Diária</span>
+                                                <span class="job-label" style="background-color: #6600ff33;"
+                                                    id="valor">R$250</span>
+                                            </div>
+                                            <div>
+                                                <div class="card bg-white p-3 mb-4 border-0">
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                    <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                    <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                    <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                    <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                    <small class="ml-1">Centro, Duque de Caxias</small>
+                                                    <br>
+                                                    <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                    <small class="ml-1">Diária</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                        <p class="mb-1 mt-1 text-muted"></p>
+                                        <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                            style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <br>
+                                    <div class="job-card" style="border-radius: 30px;">
+                                        <div class="job-card__content">
+                                            <div class="job-card__content-top">
+                                                <div class="job-card_img">
+                                                    <img src="careplus_media/user_2.png" alt="Company Logo">
+                                                </div>
+                                                <div class="job-card_info">
+                                                    <a href="#!" class="float-right">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#!" class="job-card_company">
+                                                        <h4 class="mb-0 d-inline-block">Felipe Luís</h4>
+                                                    </a>
+                                                    <p class="text-muted mb-0">@_felipin</p>
+                                                </div>
+                                            </div>
+                                            <div class="job-card_content-mid">
+                                                <div class="job-card_job-type">
+                                                    <span class="job-label" style="background-color: #ff9e1727;"
+                                                        id="valor">Concluído</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="tipo">Diária</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="valor">R$250</span>
+                                                </div>
+                                                <div>
+                                                    <div class="card bg-white p-3 mb-4 border-0">
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                        <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                        <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                        <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                        <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                        <small class="ml-1">Centro, Duque de Caxias</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                        <small class="ml-1">Diária</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                            <p class="mb-1 mt-1 text-muted"></p>
+                                            <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                                style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <br>
+                                    <div class="job-card" style="border-radius: 30px;">
+                                        <div class="job-card__content">
+                                            <div class="job-card__content-top">
+                                                <div class="job-card_img">
+                                                    <img src="careplus_media/user_2.png" alt="Company Logo">
+                                                </div>
+                                                <div class="job-card_info">
+                                                    <a href="#!" class="float-right">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#!" class="job-card_company">
+                                                        <h4 class="mb-0 d-inline-block">Pedro Geromel</h4>
+                                                    </a>
+                                                    <p class="text-muted mb-0">@geromito_cuida</p>
+                                                </div>
+                                            </div>
+                                            <div class="job-card_content-mid">
+                                                <div class="job-card_job-type">
+                                                    <span class="job-label" style="background-color: #ff9e1727;"
+                                                        id="valor">Concluído</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="tipo">Diária</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="valor">R$250</span>
+                                                </div>
+                                                <div>
+                                                    <div class="card bg-white p-3 mb-4 border-0">
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                        <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                        <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                        <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                        <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                        <small class="ml-1">Centro, Duque de Caxias</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                        <small class="ml-1">Diária</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                            <p class="mb-1 mt-1 text-muted"></p>
+                                            <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                                style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <br>
+                                    <div class="job-card" style="border-radius: 30px;">
+                                        <div class="job-card__content">
+                                            <div class="job-card__content-top">
+                                                <div class="job-card_img">
+                                                    <img src="careplus_media/user_2.png" alt="Company Logo">
+                                                </div>
+                                                <div class="job-card_info">
+                                                    <a href="#!" class="float-right">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#!" class="job-card_company">
+                                                        <h4 class="mb-0 d-inline-block">Thiago Silva</h4>
+                                                    </a>
+                                                    <p class="text-muted mb-0">@thiago_silva</p>
+                                                </div>
+                                            </div>
+                                            <div class="job-card_content-mid">
+                                                <div class="job-card_job-type">
+                                                    <span class="job-label" style="background-color: #ff9e1727;"
+                                                        id="valor">Concluído</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="tipo">Diária</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="valor">R$250</span>
+                                                </div>
+                                                <div>
+                                                    <div class="card bg-white p-3 mb-4 border-0">
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                        <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                        <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                        <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                        <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                        <small class="ml-1">Centro, Duque de Caxias</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                        <small class="ml-1">Diária</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                            <p class="mb-1 mt-1 text-muted"></p>
+                                            <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                                style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <br>
+                                    <div class="job-card" style="border-radius: 30px;">
+                                        <div class="job-card__content">
+                                            <div class="job-card__content-top">
+                                                <div class="job-card_img">
+                                                    <img src="careplus_media/user_2.png" alt="Company Logo">
+                                                </div>
+                                                <div class="job-card_info">
+                                                    <a href="#!" class="float-right">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#!" class="job-card_company">
+                                                        <h4 class="mb-0 d-inline-block">Gabriel Barbosa</h4>
+                                                    </a>
+                                                    <p class="text-muted mb-0">@gabigol_cuidador</p>
+                                                </div>
+                                            </div>
+                                            <div class="job-card_content-mid">
+                                                <div class="job-card_job-type">
+                                                    <span class="job-label" style="background-color: #ff9e1727;"
+                                                        id="valor">Concluído</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="tipo">Diária</span>
+                                                    <span class="job-label" style="background-color: #6600ff33;"
+                                                        id="valor">R$250</span>
+                                                </div>
+                                                <div>
+                                                    <div class="card bg-white p-3 mb-4 border-0">
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                        <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                        <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                        <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                        <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                        <small class="ml-1">Centro, Duque de Caxias</small>
+                                                        <br>
+                                                        <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                        <small class="ml-1">Diária</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                            <p class="mb-1 mt-1 text-muted"></p>
+                                            <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                                style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Marcos Corrêa</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@marquinhos</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Concluído</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$250</span>
+                                        </div>
+                                        <div>
+                                            <div class="card bg-white p-3 mb-4 border-0">
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                <small class="ml-1">Centro, Duque de Caxias</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                <small class="ml-1">Diária</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <br>
+                            <div class="job-card" style="border-radius: 30px;">
+                                <div class="job-card__content">
+                                    <div class="job-card__content-top">
+                                        <div class="job-card_img">
+                                            <img src="careplus_media/user_2.png" alt="Company Logo">
+                                        </div>
+                                        <div class="job-card_info">
+                                            <a href="#!" class="float-right">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                            <a href="#!" class="job-card_company">
+                                                <h4 class="mb-0 d-inline-block">Douglas Costa</h4>
+                                            </a>
+                                            <p class="text-muted mb-0">@costa_douglas22</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-card_content-mid">
+                                        <div class="job-card_job-type">
+                                            <span class="job-label" style="background-color: #ff9e1727;"
+                                                id="valor">Concluído</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="tipo">Diária</span>
+                                            <span class="job-label" style="background-color: #6600ff33;"
+                                                id="valor">R$250</span>
+                                        </div>
+                                        <div>
+                                            <div class="card bg-white p-3 mb-4 border-0">
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Horário</h6>
+                                                <small class="ml-1">Início - 12 de dezembro (18:00)</small>
+                                                <small class="ml-1">Término - 18 de dezembro (14:00)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Pagamento</h6>
+                                                <small class="ml-1">R$560 (Cartão de crédito)</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Local</h6>
+                                                <small class="ml-1">Av. Nilo Peçanha, 569</small>
+                                                <small class="ml-1">Centro, Duque de Caxias</small>
+                                                <br>
+                                                <h6 class="mb-0" style="color: #3b1971;">Formato da solicitação</h6>
+                                                <small class="ml-1">Diária</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-card__footer" style="background-image: url('careplus_media/1.png');">
+                                    <p class="mb-1 mt-1 text-muted"></p>
+                                    <a class="btn btn-outline-primary rounded-pill border-0" href=""
+                                        style=" color: #3b1971; background-color: white;">Ver solicitações</a>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+
+
+</body>
+
+</html>
