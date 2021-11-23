@@ -18,7 +18,7 @@ $bairro = $_POST['txt_bairro'];
 $cidade = $_POST['txt_cidade'];
 
 
-$sql_cadastro=mysqli_query( $conexao , " INSERT INTO `tb_usuarios` (`nome`, `sobrenome`, `usuario`, `senha`, `email`, `endereço`, `lote`, `cpf`, `rg`, `cep`, `numero`, `bairro`, `cidade`) VALUES ('$primeironome', '$segundonome', '$usuario', '$senha', '$email', '$endereco', '$complemento', '$cpf', '$rg', '$cep', '$numero', '$bairro', '$cidade') " );
+$sql_cadastro=mysqli_query( $conexao , " INSERT INTO `tb_cuidador` (`nome`, `sobrenome`, `username`, `senha`, `email`, `Endereço`, `Lote`, `CPF`, `RG`, `CEP`, `Contato`, `Bairro`, `Cidade`) VALUES ('$primeironome', '$segundonome', '$usuario', '$senha', '$email', '$endereco', '$complemento', '$cpf', '$rg', '$cep', '$numero', '$bairro', '$cidade') " );
 
 if($sql_cadastro==true){
 
@@ -26,7 +26,7 @@ if($sql_cadastro==true){
 
 
     alert('Usuário cadastrado com sucesso!');
-    window.location.href='login.html';
+    window.location.href='auth_carepartner.html';
 
 
     </script> ";

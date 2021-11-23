@@ -9,14 +9,14 @@ $sql_logar=mysqli_query($conexao, " SELECT *FROM `tb_usuarios` WHERE `email`='$e
 
 if(mysqli_num_rows($sql_logar)!=0){
 
-    header('location:cover/index.html');
+    header('location:care+/index.html');
 
 }
 
 else {
 
 
-    header('location:login_erro.html');
+    header('location:auth_careacc_erro.html');
 
 
 
