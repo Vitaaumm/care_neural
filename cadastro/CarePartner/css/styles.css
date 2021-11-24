@@ -18,7 +18,6 @@
   src: url(fonts/ProductSans-MediumItalic.ttf);
 }
 
-
 @font-face {
   font-family: PSBO;
   src: url(fonts/ProductSans-Bold.ttf);
@@ -39,7 +38,7 @@
   --container-color: #FFFFFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: PSM;
   --normal-font-size: .938rem;
   --small-font-size: .75rem;
   --smaller-font-size: .75rem;
@@ -92,6 +91,10 @@ h2{
   font-family: PSM;
 }
 h6 {
+  font-family: PSM;
+}
+
+P{
   font-family: PSM;
 }
 

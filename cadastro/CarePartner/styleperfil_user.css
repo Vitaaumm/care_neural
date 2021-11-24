@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: PSB;
+    src: url(css/fonts/ProductSans-Black.ttf);
+  }
+
+@font-face {
+    font-family: PSBI;
+    src: url(css/fonts/ProductSans-BoldItalic.ttf);
+  }
+
+@font-face {
+    font-family: PSM;
+    src: url(css/fonts/ProductSans-Medium.ttf);
+  }
+
+@font-face {
+    font-family: PSMI;
+    src: url(css/fonts/ProductSans-MediumItalic.ttf);
+  }
+
+  
+@font-face {
+    font-family: PSBO;
+    src: url(css/fonts/ProductSans-Bold.ttf);
+  }
+
+  h1 {
+    font-family: PSBO;
+}
+
+h2 {
+    font-family: PSBO;
+}
+h6 {
+    font-family: PSBO;
+}
+
+span  {
+    font-family: PSM;
+  }
+
+a:link{
+    font-family: PSM;
+ }
+
+Button {
+    font-family: PSM;
+}
+
+body {
+    background-color: #eee;
+    font-family: PSM;
+}
+
+h6{
+  font-family: PSM;
+}
+
+.btn-outline-primary-space {
+  margin-right: 10px;
+}
+
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+}
