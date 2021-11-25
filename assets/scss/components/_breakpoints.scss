@@ -1,5 +1,4 @@
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 @media screen and (max-width: 320px){
     .container{
         margin-left: var(--mb-1);
@@ -30,7 +29,6 @@
     }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px){
     .steps{
         &__container{
@@ -112,7 +110,6 @@
     }
 }
 
-/* For large devices */
 @media screen and (min-width: 992px){
     .container{
         margin-left: auto;

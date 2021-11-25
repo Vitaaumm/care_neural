@@ -1,12 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-/*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  --header-height: 3.5rem;
   --hue: 152;
   --first-color: #feb949;
   --first-color-alt: #ce8b1f;
@@ -17,9 +12,6 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -28,13 +20,8 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-1: 1rem;
@@ -42,12 +29,10 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -60,7 +45,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 *{
   box-sizing: border-box;
   padding: 0;
@@ -83,7 +67,7 @@ body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
 button{
@@ -110,8 +94,6 @@ img{
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
 body.dark-theme{
   --first-color-dark: hsl(var(--hue), 8%, 20%);
   --title-color: hsl(var(--hue), 4%, 95%);
@@ -120,7 +102,6 @@ body.dark-theme{
   --container-color: hsl(var(--hue), 8%, 16%);
 }
 
-/*========== Button Dark/Light ==========*/
 .change-theme{
   color: var(--title-color);
   font-size: 1.15rem;
@@ -132,11 +113,6 @@ body.dark-theme{
   align-items: center;
   column-gap: 1rem;
 }
-
-/*========== 
-Color changes in some parts of 
-the website, in dark theme 
-==========*/
 
 .dark-theme .steps__bg,
 .dark-theme .questions{
@@ -152,7 +128,6 @@ the website, in dark theme
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .section{
   padding: 5.5rem 0 1rem;
 }
@@ -179,10 +154,9 @@ the website, in dark theme
 }
 
 .main{
-  overflow: hidden; /*For animation*/
+  overflow: hidden;
 }
 
-/*=============== HEADER ===============*/
 .header{
   width: 100%;
   background-color: var(--body-color);
@@ -190,10 +164,9 @@ the website, in dark theme
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
-/*=============== NAV ===============*/
 .nav{
   height: var(--header-height);
   display: flex;
@@ -272,17 +245,14 @@ the website, in dark theme
   color: var(--first-color);
 }
 
-/* Show menu */
 .show-menu{
   right: 0;
 }
 
-/* Change background header */
 .scroll-header{
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, .1);
 }
 
-/* Active link */
 .active-link{
   position: relative;
   color: var(--first-color);
@@ -298,7 +268,6 @@ the website, in dark theme
   background-color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
 .home{
   padding: 3.5rem 0 2rem;
 }
@@ -366,7 +335,6 @@ the website, in dark theme
   transform: translateX(.25rem);
 }
 
-/*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -404,7 +372,6 @@ the website, in dark theme
   transform: translateX(.25rem);
 }
 
-/*=============== ABOUT ===============*/
 .about__container{
   row-gap: 2rem;
 }
@@ -440,7 +407,6 @@ the website, in dark theme
   margin-top: .15rem;
 }
 
-/*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
@@ -485,8 +451,6 @@ the website, in dark theme
 .steps__card:hover .steps__card-number{
   transform: translateY(-.25rem);
 }
-
-/*=============== PRODUCTS ===============*/
 .product__description{
   text-align: center;
 }
@@ -550,7 +514,6 @@ the website, in dark theme
   transform: translateY(-.5rem);
 }
 
-/*=============== QUESTIONS ===============*/
 .questions{
   background-color: var(--first-color-lighten);
 }
@@ -611,7 +574,6 @@ the website, in dark theme
   box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
 }
 
-/*Rotate icon, change color of titles and background*/
 .accordion-open .questions__header,
 .accordion-open .questions__content{
   background-color: var(--first-color);
@@ -627,7 +589,6 @@ the website, in dark theme
   transform: rotate(45deg);
 }
 
-/*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3.5rem;
 }
@@ -702,7 +663,6 @@ the website, in dark theme
   resize: none;
 }
 
-/*Input focus move up label*/
 .contact__input:focus + .contact__label{
   top: -.75rem;
   left: 0;
@@ -710,14 +670,12 @@ the website, in dark theme
   z-index: 10;
 }
 
-/*Input focus sticky top label*/
 .contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
   top: -.75rem;
   font-size: var(--smaller-font-size);
   z-index: 10;
 }
 
-/*=============== FOOTER ===============*/
 .footer__container{
   row-gap: 3rem;
 }
@@ -809,7 +767,6 @@ the website, in dark theme
   margin: 5rem 0 1rem;
 }
 
-/*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
   background-color: var(--first-color);
@@ -833,12 +790,10 @@ the website, in dark theme
   opacity: 1;
 }
 
-/* Show Scroll Up*/
 .show-scroll{
   bottom: 3rem;
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
   background: hsl(var(--hue), 4%, 53%);
@@ -848,9 +803,6 @@ the website, in dark theme
   background: hsl(var(--hue), 4%, 29%);
   border-radius: .5rem;
 }
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 320px){
   .container{
     margin-left: var(--mb-1);
@@ -876,8 +828,6 @@ the website, in dark theme
     justify-content: center;
   }
 }
-
-/* For medium devices */
 @media screen and (min-width: 576px){
   .steps__container{
     grid-template-columns: repeat(2, 1fr);
@@ -951,8 +901,6 @@ the website, in dark theme
     width: initial;
   }
 }
-
-/* For large devices */
 @media screen and (min-width: 992px){
   .container{
     margin-left: auto;

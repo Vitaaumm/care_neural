@@ -1,4 +1,3 @@
-/*=============== SCROLL UP ===============*/
 .scrollup{
     position: fixed;
     background: var(--first-color);
@@ -22,12 +21,10 @@
     }
 }
 
-/* Show Scroll Up*/
 .show-scroll{
     bottom: 3rem;
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
     width: .6rem;
     background: hsl(var(--hue), 4%, 53%);
