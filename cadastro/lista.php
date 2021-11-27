@@ -22,9 +22,7 @@ $result = $conexao2->query($sql);
 </head>
 <body>
     <table class="table caption-top">
-
       <caption>Lista de cuidadores</caption>
-
         <thead>
           <tr>
             <th scope="col">Nome</th>
